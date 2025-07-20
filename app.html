@@ -1,44 +1,77 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ViralMeter - Check Your Clout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralMeter - Check Your Clout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <meta name="author" content="Raymond Nicholas (Raymond Pro Guy)">
-  <meta name="description" content="ViralMeter - A funny Nigerian-style clout checker built by Raymond Pro Guy using HTML, CSS, and JS.">
-  <meta name="keywords" content="ViralMeter, Clout Checker, Social Media, Nigerian App, Raymond Pro Guy, Follower Analyzer, Fun App">
+  <meta name="description" content="ViralMeter - A funny Nigerian-style clout checker built by Raymond Pro Guy using >
+  <meta name="keywords" content="ViralMeter, Clout Checker, Social Media, Nigerian App, Raymond Pro Guy, Follower Ana>
   <meta property="og:title" content="ViralMeter - Built by Raymond Pro Guy">
-  <meta property="og:description" content="Na you get clout? Check am now! Nigerian style fame checker by Raymond Nicholas">
+  <meta property="og:description" content="Na you get clout? Check am now! Nigerian style fame checker by Raymond Nic>
   <meta property="og:url" content="https://viralmeter.pxxl.click">
-
-  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container">
-    <h1>ViralMeter 🔥</h1>
-
-    <div class="input-group">
-      <input type="number" id="followers" placeholder="How many followers you get?" />
-      <input type="number" id="likes" placeholder="How many likes you dey get?" />
-      <button onclick="checkClout()">Check Clout</button>
+    <div class="container">
+        <header>
+            <h1>Welcome to ViralMeter</h1>
+            <p class="subtext">Wanna know how famous you fit be?</p>
+        </header>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <select id="platform">
+                    <option value="instagram">Instagram</option>
+                    <option value="twitter">X (Twitter)</option>
+                    <option value="tiktok">TikTok</option>
+                </select>
+                <button id="check-btn">Check My Fame 🔍</button>
+            </div>
+        </div>
+        
+        <div class="loading" id="loading">
+            Calculating your clout... Hold on o ⏳😂
+        </div>
+        
+        <div class="result-section" id="result-section">
+            <div class="result-card">
+                <div class="result-username" id="result-username">
+                    Your ViralMeter Results
+                </div>
+                <h2>Check My Fame</h2>
+                <div class="follower-count" id="follower-count">0</div>
+                <div class="reaction-message" id="reaction-message">
+                    Na juju you use? Weytin you do Mark?! 🥴🤥
+                </div>
+                <div class="celeb-comparison" id="celeb-comparison">
+                    You reach <strong>Burna Boy</strong> level? Abeg share money! 💵😂
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn whatsapp" onclick="shareResult('whatsapp')">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </button>
+                    <button class="share-btn twitter" onclick="shareResult('twitter')">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </button>
+                    <button class="share-btn facebook" onclick="shareResult('facebook')">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </button>
+                    <button class="share-btn instagram" onclick="shareResult('instagram')">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            For cruise only. No dey carry am serious 😎
+        </footer>
     </div>
 
-    <div class="result-card" id="result-card" style="display: none;">
-      <div class="result-header">
-        <h2 id="result-username">Your ViralMeter Results</h2>
-        <p id="result-score"></p>
-      </div>
-      <div class="result-message" id="result-message"></div>
-      <button onclick="shareResult()">📤 Share</button>
-    </div>
-  </div>
-
-  <footer>
-    Built with cruise 😎 by <strong>Raymond Pro Guy</strong> – 
-    <a href="https://github.com/raymondproguy25" target="_blank">GitHub</a>
-  </footer>
-
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

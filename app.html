@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ViralMeter - Check Your Clout</title>
+
+  <meta name="author" content="Raymond Nicholas (Raymond Pro Guy)">
+  <meta name="description" content="ViralMeter - A funny Nigerian-style clout checker built by Raymond Pro Guy using HTML, CSS, and JS.">
+  <meta name="keywords" content="ViralMeter, Clout Checker, Social Media, Nigerian App, Raymond Pro Guy, Follower Analyzer, Fun App">
+  <meta property="og:title" content="ViralMeter - Built by Raymond Pro Guy">
+  <meta property="og:description" content="Na you get clout? Check am now! Nigerian style fame checker by Raymond Nicholas">
+  <meta property="og:url" content="https://viralmeter.pxxl.click">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ViralMeter 🔥</h1>
+
+    <div class="input-group">
+      <input type="number" id="followers" placeholder="How many followers you get?" />
+      <input type="number" id="likes" placeholder="How many likes you dey get?" />
+      <button onclick="checkClout()">Check Clout</button>
+    </div>
+
+    <div class="result-card" id="result-card" style="display: none;">
+      <div class="result-header">
+        <h2 id="result-username">Your ViralMeter Results</h2>
+        <p id="result-score"></p>
+      </div>
+      <div class="result-message" id="result-message"></div>
+      <button onclick="shareResult()">📤 Share</button>
+    </div>
+  </div>
+
+  <footer>
+    Built with cruise 😎 by <strong>Raymond Pro Guy</strong> – 
+    <a href="https://github.com/raymondproguy25" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

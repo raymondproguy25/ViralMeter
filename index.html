@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViralMeter - Check Your Clout</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <meta name="author" content="Raymond Nicholas (Raymond Pro Guy)">
@@ -14,16 +14,16 @@
   <meta property="og:description" content="Na you get clout? Check am now! Nigerian style fame checker by Raymond Nic>
   <meta property="og:url" content="https://viralmeter.pxxl.click">
 </head>
-
 <body>
     <div class="container">
         <header>
             <h1>Welcome to ViralMeter</h1>
             <p class="subtext">Wanna know how famous you fit be?</p>
         </header>
-        
+
         <div class="input-section">
             <div class="input-group">
+                <input type="text" id="username" placeholder="Enter your username">
                 <select id="platform">
                     <option value="instagram">Instagram</option>
                     <option value="twitter">X (Twitter)</option>
@@ -32,17 +32,14 @@
                 <button id="check-btn">Check My Fame 🔍</button>
             </div>
         </div>
-        
+
         <div class="loading" id="loading">
             Calculating your clout... Hold on o ⏳😂
         </div>
-        
+
         <div class="result-section" id="result-section">
             <div class="result-card">
-                <div class="result-username" id="result-username">
-                    Your ViralMeter Results
-                </div>
-                <h2>Check My Fame</h2>
+                <h2>My ViralMeter</h2>
                 <div class="follower-count" id="follower-count">0</div>
                 <div class="reaction-message" id="reaction-message">
                     Na juju you use? Weytin you do Mark?! 🥴🤥
@@ -66,12 +63,11 @@
                 </div>
             </div>
         </div>
-        
+
         <footer>
             For cruise only. No dey carry am serious 😎
         </footer>
     </div>
-
-    <script src="main.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>

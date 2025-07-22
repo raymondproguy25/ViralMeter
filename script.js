@@ -127,8 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
                              `📊 ${followers} followers!\n\n` +
                              `"${reaction}"\n\n` +
                              `${celeb}\n\n` +
-                             `Check yours: viralmeter.ng\n` +
-                             `#ViralMeterChallenge #WhoGetPassMe 😹`;
+                             `Check yours: https://viralmeter.pxxl.click/\n` +
+                             `#ViralMeterChallenge #WhoGetPassMe 😹 #CheckYourOwn`;
 
             switch(platform) {
                 case 'whatsapp':
